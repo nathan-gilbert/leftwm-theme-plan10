@@ -25,7 +25,7 @@ index=0
 IFS=$'\n' monitors=( $(polybar -m | sed s/:.*//) )
 leftwm-state -q -n -t $SCRIPTPATH/sizes.liquid | sed -r '/^\s*$/d' | while read -r width
 do
-  export WSINDEX=$index MONITOR=${monitors[$index]} BAR_WIDTH=$width
+  export WSINDEX=$index MONITOR=${monitors[$index]} BAR_WIDTH=$width LABEL_WIDTH=$(expr $width*0.165 | bc | awk '{printf "%d", $1}')
   polybar -c $SCRIPTPATH/polybar-config.ini leftwm &> /dev/null &
   index=$((index+1))
 done
