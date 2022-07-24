@@ -19,6 +19,6 @@ do
   export WSINDEX=$index
   export MONITOR=${monitors[$index]}
   export BAR_WIDTH=$width
-  polybar -c $SCRIPTPATH/polybar-config.ini leftwm &> /dev/null &
+  polybar -c $SCRIPTPATH/polybar-config.ini leftwm 2> ~/.polybar-$index-errors.log &
   index=$((index+1))
 done
