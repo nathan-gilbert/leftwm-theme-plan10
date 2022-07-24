@@ -3,7 +3,7 @@
 A simple theme for LeftWM based off of seabassapologist's plan 9 theme. Also,
 a tribute to Trent Harris.
 
-[![Screenshot of Plan 10](screenshot.png)]
+![Screenshot of Plan 10](screenshot.png)
 
 ## Usage
 
