@@ -2,21 +2,18 @@
 {% if tag.mine %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
 %{T5}%{T-}
-  %{A}
+ %{A}
 {% elsif tag.visible  %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
 %{T4}%{T-}
-  %{A}
+ %{A}
 {% elsif tag.busy %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
 %{T4}%{T-}
-  %{A}
+ %{A}
 {% else %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
 %{T4}%{T-}
-  %{A}
+ %{A}
 {% endif %}
 {% endfor %}
-{% unless window_title == "" %}
--  {{ window_title }}
-{% endunless %}

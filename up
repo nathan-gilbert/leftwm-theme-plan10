@@ -19,7 +19,6 @@ do
   export WSINDEX=$index
   export MONITOR=${monitors[$index]}
   export BAR_WIDTH=$width
-  export LABEL_WIDTH=$(expr $width*0.165 | bc | awk '{printf "%d", $1}')
   polybar -c $SCRIPTPATH/polybar-config.ini leftwm &> /dev/null &
   index=$((index+1))
 done
