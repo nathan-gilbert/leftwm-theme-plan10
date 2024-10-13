@@ -13,3 +13,7 @@ a tribute to Trent Harris.
 ## Usage
 
 Add a link to this repo for your current LeftWM theme: `.config/left/themes/current`
+
+## Troubleshooting
+
+- After upgrades may need to rebuild leftwm and reinstall polybar.
